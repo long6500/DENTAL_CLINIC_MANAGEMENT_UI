@@ -15,25 +15,32 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Trang chủ</Nav.Link>
-            <Nav.Link href="/team">Giới thiệu</Nav.Link>
+            {/* <Nav.Link href="/team">Giới thiệu</Nav.Link> */}
+            <NavDropdown title="Giới thiệu" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/team">Đôi nét về Delia</NavDropdown.Item>
+
+              <NavDropdown.Item href="/quytrinh">
+                Quy trình dịch vụ
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link href="/product">Sản phẩm</Nav.Link>
             <Nav.Link href="/services">Phương pháp</Nav.Link>
-            <Nav.Link href="/pathological">Bệnh lý</Nav.Link>
+            {/* <Nav.Link href="/pathological1">Bệnh lý</Nav.Link> */}
 
-            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <NavDropdown title="Bệnh lý" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/pathological1">
+                Răng khôn
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
+              <NavDropdown.Item href="/rangho">Răng hô</NavDropdown.Item>
+              <NavDropdown.Item href="/rangmom">Răng móm</NavDropdown.Item>
+              {/* <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
+              </NavDropdown.Item> */}
+            </NavDropdown>
           </Nav>
+
           {/* <Navbar.Form> */}
-         
           <Button variant="success">Sign up</Button>
           <ModalD></ModalD>
           {/* </Navbar.Form> */}

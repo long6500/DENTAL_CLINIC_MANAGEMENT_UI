@@ -10,6 +10,9 @@ import Teams from "./pages/team";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import BasicExample from "./components/BasicNavbar/BasicExample";
+import RangHo from "./pages/rangho";
+import Blogs from "./pages/blogs";
+import Quytrinh from "./pages/quytrinh";
 
 function App() {
   return (
@@ -21,7 +24,11 @@ function App() {
         <Route path="/team" element={<Teams />}></Route>
         <Route path="/product" element={<Products />}></Route>
         <Route path="/services" element={<Services />}></Route>
-        <Route path="/pathological" element={<Pathological />}></Route>
+        <Route path="/pathological1" element={<Pathological />}></Route>
+        <Route path="/rangho" element={<RangHo/>}></Route>
+        <Route path="/rangmom" element={<Blogs/>}></Route>
+        <Route path="/quytrinh" element={<Quytrinh/>}></Route>
+
       </Routes>
       <Footer />
     </Router>
