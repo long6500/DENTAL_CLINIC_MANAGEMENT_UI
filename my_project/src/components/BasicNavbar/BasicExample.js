@@ -23,9 +23,19 @@ function BasicExample() {
                 Quy trình dịch vụ
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/product">Sản phẩm</Nav.Link>
-            <Nav.Link href="/services">Phương pháp</Nav.Link>
-            {/* <Nav.Link href="/pathological1">Bệnh lý</Nav.Link> */}
+            <NavDropdown title="Sản phẩm" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/product">Niềng răng</NavDropdown.Item>
+              <NavDropdown.Item href="/alphadent">
+              ALPHADENT IMPLANTS
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Phương pháp" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/services">Niềng răng</NavDropdown.Item>
+              <NavDropdown.Item href="/bocrangsu">
+                Bọc răng sứ
+              </NavDropdown.Item>
+            </NavDropdown>
+            {/* <Nav.Link href="/services">Phương pháp</Nav.Link> */}
 
             <NavDropdown title="Bệnh lý" id="basic-nav-dropdown">
               <NavDropdown.Item href="/pathological1">

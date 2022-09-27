@@ -13,6 +13,8 @@ import BasicExample from "./components/BasicNavbar/BasicExample";
 import RangHo from "./pages/rangho";
 import Blogs from "./pages/blogs";
 import Quytrinh from "./pages/quytrinh";
+import Bocrangsu from "./pages/bocrangsu";
+import AlphadentImplant from "./pages/AlphadentImplant";
 
 function App() {
   return (
@@ -28,7 +30,10 @@ function App() {
         <Route path="/rangho" element={<RangHo/>}></Route>
         <Route path="/rangmom" element={<Blogs/>}></Route>
         <Route path="/quytrinh" element={<Quytrinh/>}></Route>
+        <Route path="/bocrangsu" element={<Bocrangsu/>}></Route>
+        <Route path="/alphadent" element={<AlphadentImplant/>}></Route>
 
+        
       </Routes>
       <Footer />
     </Router>
